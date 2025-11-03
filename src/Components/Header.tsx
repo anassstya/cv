@@ -5,7 +5,7 @@ import AnimatedWord from "../Animations.tsx";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
 import {useGSAP} from "@gsap/react";
-import React, {useEffect, useRef} from "react";
+import {useRef} from "react";
 gsap.registerPlugin(SplitText);
 
 
@@ -33,34 +33,38 @@ export default function Header(){
             }
         });
 
-        split.chars.forEach((char: HTMLElement) => {
-            char.style.cursor = "pointer";
+        split.chars.forEach((char) => {
+            const el = char as HTMLElement; // приведение типа
 
-            char.addEventListener("mouseenter", () => {
-                gsap.to(char, {
+            el.style.cursor = "pointer";
+
+            el.addEventListener("mouseenter", () => {
+                gsap.to(el, {
                     color: "#4ecdc4",
                     duration: 0.3,
-                    ease: "power2.out"
+                    ease: "power2.out",
                 });
-                if (char.textContent?.toLowerCase() === "o") {
-                    gsap.set(char, { rotation: 0 });
-                    gsap.to(char, {
+
+                if (el.textContent?.toLowerCase() === "o") {
+                    gsap.set(el, { rotation: 0 });
+                    gsap.to(el, {
                         rotation: 360,
                         duration: 0.6,
                         ease: "back.out(2)",
-                        transformOrigin: "center center"
+                        transformOrigin: "center center",
                     });
                 }
             });
 
-            char.addEventListener("mouseleave", () => {
-                gsap.to(char, {
+            el.addEventListener("mouseleave", () => {
+                gsap.to(el, {
                     color: "transparent",
                     duration: 0.3,
-                    ease: "power2.out"
+                    ease: "power2.out",
                 });
             });
         });
+
 
         return () => {
             split.revert();

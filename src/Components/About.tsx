@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import {useRef} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import '../css/About.scss';
 import {useGSAP} from "@gsap/react";
@@ -13,21 +13,23 @@ export default function About(){
 
         const split = SplitText.create(aboutRef.current, { type: "chars, words" });
 
-        split.chars.forEach((char: HTMLElement) => {
-            char.style.cursor = "pointer";
+        split.chars.forEach((char) => {
+            const el = char as HTMLElement; // приведение типа
+            el.style.cursor = "pointer";
 
-            char.addEventListener("mouseenter", () => {
-                gsap.to(char, {
+            el.addEventListener("mouseenter", () => {
+                gsap.to(el, {
                     color: "#ff6b6b",
                     duration: 0.3,
-                    ease: "power2.out"
+                    ease: "power2.out",
                 });
             });
-            char.addEventListener("mouseleave", () => {
-                gsap.to(char, {
+
+            el.addEventListener("mouseleave", () => {
+                gsap.to(el, {
                     color: "transparent",
                     duration: 0.3,
-                    ease: "power2.out"
+                    ease: "power2.out",
                 });
             });
         });
