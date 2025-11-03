@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Russo';
+    src: url('../public/Russo_one/RussoOne-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source';
+    src: url('../public/Source_Code_Pro/static/SourceCodePro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+html, body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}

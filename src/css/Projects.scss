@@ -1,0 +1,139 @@
+.projects{
+  background: #000;
+
+  &__name{
+    text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #4ecdc4;
+    text-stroke: 1px #4ecdc4;
+    font-size: clamp(40px, 5.5vw, 100px);
+    font-weight: 900;
+    padding: 150px 0 55px 0;
+
+  }
+
+  &__btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: "Source", "sans-serif";
+
+    &-item{
+      border-radius: 30px;
+      border: 1px solid #ff6b6b;
+      background-color: transparent;
+      padding: 10px 30px;
+      font-size: 18px;
+
+      &:hover{
+        border: 2px solid #fff;
+        background-color: transparent;
+      }
+
+      @media(max-width: 992px){
+        font-size: 16px;
+      }
+      @media(max-width: 768px){
+        font-size: 15px;
+        padding: 10px 15px;
+      }
+      @media(max-width: 576px){
+        font-size: 14px;
+        padding: 10px 10px;
+      }
+
+      &:focus, &:active,  &.active,
+      &:focus-visible{
+        background-color: #ff6b6b !important;
+        border: 2px solid #fff !important;
+      }
+    }
+    @media(max-width: 992px){
+      gap: 20px;
+    }
+    @media(max-width: 768px){
+      gap: 10px;
+    }
+    @media(max-width: 576px){
+      gap: 4px;
+    }
+
+  }
+
+  &__block{
+    margin: 30px 0 0 0;
+    list-style-type: none;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    &-item{
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+
+      &-spn{
+        text-decoration: underline;
+      }
+
+      @media(max-width: 992px){
+        font-size: 16px;
+      }
+      @media(max-width: 768px){
+        font-size: 15px;
+      }
+      @media(max-width: 576px){
+        font-size: 14px;
+      }
+    }
+    @media(max-width: 992px){
+      gap: 30px;
+    }
+    @media(max-width: 768px){
+      gap: 20px;
+      justify-content: space-evenly;
+    }
+    @media(max-width: 576px){
+      gap: 15px;
+    }
+  }
+
+  &__txt {
+    margin: 40px 0 100px 0;
+    font-size: 18px;
+    color: #4ecdc4;
+    @media(max-width: 992px){
+      font-size: 16px;
+    }
+    @media(max-width: 768px){
+      font-size: 15px;
+    }
+    @media(max-width: 576px){
+      font-size: 14px;
+    }
+  }
+
+  &__img{
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+
+    @media(max-width: 992px){
+      max-width: 400px;
+    }
+    @media(max-width: 768px){
+      max-width: 300px;
+    }
+    @media(max-width: 576px){
+      max-width: 200px;
+    }
+  }
+}
+
