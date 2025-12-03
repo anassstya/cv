@@ -1,5 +1,4 @@
 import '../css/Projects.scss';
-import {Badge, Button, Card, ListGroup} from "react-bootstrap";
 
 export default function BackendBlock(){
     return(
