@@ -135,5 +135,20 @@
       max-width: 200px;
     }
   }
+
+  &__backend{
+    font-family: "Source", "sans-serif";
+    font-size: 18px;
+    margin-top: 50px;
+
+    &-name{
+      color: #ff6b6b;
+      font-family: 'Russo', sans-serif;
+    }
+    &-btn{
+      border: 2px solid #4ecdc4;
+    }
+  }
+
 }
 

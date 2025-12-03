@@ -19,9 +19,6 @@ export default function FrontendBlock(){
                 <li className="projects__block-item">Jest</li>
                 <li className="projects__block-item">Git / GitHub</li>
             </ul>
-            <p className="projects__txt text-center">Скоро тут появятся новые проекты.</p>
-            <img className="projects__img" src={cat} alt=""/>
-
         </div>
     )
 }
