@@ -92,7 +92,7 @@ export default function Header(){
             </Navbar>
             <Container fluid="sm">
                 <div className="header__vacancy text-center">
-                    <span className="header__vacancy-full">Frontend</span>{" "}
+                    <span className="header__vacancy-full">Fullstack</span>{" "}
                     <span ref={developerRef}>Developer</span>
                 </div>
                 <Row className="header__content gx-0  my-5">

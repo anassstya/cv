@@ -26,8 +26,9 @@ body {
 
   &__logo{
     font-size: clamp(18px, 3vw, 30px);
-    font-family: "Russo", "sans-serif";
+    font-weight: 800;
     color: #ff6b6b !important;
+    font-family: "Source", "sans-serif" !important;
 
   }
 
@@ -59,9 +60,9 @@ body {
   }
 
   &__name{
-    font-family: "Russo", "sans-serif" !important;
+    font-family: "Source", "sans-serif" !important;
     color: #fff;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 50px;
 
 
