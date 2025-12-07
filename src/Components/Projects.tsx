@@ -117,7 +117,7 @@ export default function Project(){
                         <Card.Body className="d-flex flex-column">
                             <div className="d-flex justify-content-between align-items-start mb-2">
                                 <Card.Title className="projects__backend-name">Calculator</Card.Title>
-                                <Badge bg="dark">Go · PostgreSQL · Frontend</Badge>
+                                <Badge bg="dark">Go · PostgreSQL · React</Badge>
                             </div>
 
                             <Card.Text>
