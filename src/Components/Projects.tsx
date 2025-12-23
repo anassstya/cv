@@ -147,6 +147,39 @@ export default function Project(){
 
                         </Card.Body>
                     </Card>
+                    <Card className="my-5 projects__backend-item h-100 shadow-sm">
+                        <Card.Body className="d-flex flex-column">
+                            <div className="d-flex justify-content-between align-items-start mb-2">
+                                <Card.Title className="projects__backend-name">Subscriptions Service</Card.Title>
+                                <Badge bg="dark">Go · PostgreSQL · Swagger · Docker Compose</Badge>
+                            </div>
+
+                            <Card.Text>
+                                Веб-приложение для управления подписками: фронтенд на React, REST API на Go и хранение данных в PostgreSQL.
+                            </Card.Text>
+
+                            <ListGroup variant="flush" className="mb-3 small">
+                                <ListGroup.Item>✓ CRUDL подписок</ListGroup.Item>
+                                <ListGroup.Item>✓ Фильтрация и подсчет total_price</ListGroup.Item>
+                                <ListGroup.Item>✓ Swagger + Docker Compose</ListGroup.Item>
+                            </ListGroup>
+
+                            <div className="mt-auto d-flex justify-content-between align-items-center">
+                                <Button
+                                    className="projects__backend-btn"
+                                    variant="outline-dark"
+                                    href="https://github.com/anassstya/subscriptions-service"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub
+                                </Button>
+
+                                <small className="text-muted">2025</small>
+                            </div>
+                        </Card.Body>
+                    </Card>
+
                 </div>
                 <p className="projects__txt text-center">Скоро тут появится больше новых проектов!</p>
                 <img className="projects__img" src={cat} alt=""/>
